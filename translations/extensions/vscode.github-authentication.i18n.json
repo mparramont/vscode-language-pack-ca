@@ -26,11 +26,34 @@
 			"Your Code: {0}/The {0} will be a code, e.g. 123-456": "Su código: {0}",
 			"device code": "código del dispositivo",
 			"local server": "servidor local",
-			"personal access token": "token de acceso personal"
+			"personal access token": "token de acceso personal",
+			"A reload is required for the fetch setting change to take effect.": "Es requereix una recàrrega perquè el canvi d'ajust de captura tingui efecte.",
+			"Copy & Continue to Browser": "Copia i continua al navegador",
+			"Could not reach GitHub to finish signing in with Microsoft. Check your connection and try again.": "No s'ha pogut arribar a GitHub per acabar d'iniciar la sessió amb Microsoft. Comproveu la vostra connexió i torneu-ho a provar.",
+			"Could not read the GitHub account linked to your Microsoft account.": "No s'ha pogut llegir el compte de GitHub vinculat al vostre compte de Microsoft.",
+			"Could not sign in to Microsoft. Try again or choose a different way to sign in.": "No s'ha pogut iniciar la sessió a Microsoft. Torneu-ho a provar o trieu una manera diferent d'iniciar la sessió.",
+			"GitHub Authentication - Reload required": "Autenticació GitHub - Recarrega requerida",
+			"GitHub did not accept your Microsoft account for sign in.": "GitHub no ha acceptat el vostre compte de Microsoft per iniciar sessió.",
+			"GitHub is not configured to accept Microsoft sign in from this application ({0}).": "GitHub no està configurat per acceptar l'inici de sessió de Microsoft des d'aquesta aplicació ({0}).",
+			"GitHub rejected the Microsoft sign in ({0}).": "GitHub ha rebutjat l'inici de sessió de Microsoft ({0}).",
+			"GitHub returned an unexpected response while signing in with Microsoft.": "GitHub ha retornat una resposta inesperada en iniciar la sessió amb Microsoft.",
+			"Reload Window": "Torna a carregar la finestra",
+			"Sign in with SSO": "Inicia sessió amb SSO",
+			"Signing in to Microsoft again is required.": "Es requereix iniciar sessió a Microsoft de nou.",
+			"This GitHub host does not support signing in with Microsoft.": "Aquest servidor GitHub no permet iniciar la sessió amb Microsoft.",
+			"This build of {0} is not configured to sign in to GitHub with Microsoft.": "Aquesta construcció de {0} no està configurada per iniciar la sessió a GitHub amb Microsoft.",
+			"Use a Different Microsoft Account": "Usa un compte de Microsoft diferent",
+			"Your Microsoft account is now linked to a different GitHub account.": "El vostre compte de Microsoft ara està enllaçat a un altre compte de GitHub.",
+			"Your organization's Microsoft sign-in is linked to this GitHub account:\n\n{0}\n\nSign in to GitHub with this account?": "L'inici de sessió de Microsoft de la vostra organització està vinculat a aquest compte de GitHub:\n\n{0}\n\nInicieu la sessió a GitHub amb aquest compte?",
+			"url handler": "Gestor d'URL"
 		},
 		"package": {
 			"description": "Proveedor de autenticación de GitHub",
-			"displayName": "Autenticación de GitHub"
+			"displayName": "Autenticación de GitHub",
+			"config.github-enterprise.title": "Autenticació de GHE.com i GitHub Enterprise Server",
+			"config.github-enterprise.uri.description": "L'URI per a la vostra instància GHE.com o GitHub Enterprise Server.\n\nExemples:\n* GHE.com: `https://octocat.ghe.com`\n* Servidor corporatiu GitHub: `https://github.octocat.com`\n\n. **Nota:** Això no s'ha d'establir a un URI de GitHub.com. Si el vostre compte existeix a GitHub.com o és un usuari GitHub Enterprise, no necessiteu cap configuració addicional i simplement podeu iniciar sessió a GitHub.",
+			"config.github-authentication.useElectronFetch.description": "Quan és cert, utilitza la funció de captura integrada d'Electron per a les sol·licituds HTTP. Quan és fals, utilitza la funció d'obtenció global de Node.js. Aquesta configuració només s'aplica quan s'executa en l'entorn d'electrons. **Nota:** Es requereix un reinici perquè aquest paràmetre tingui efecte.",
+			"config.github-authentication.preferDeviceCodeFlow.description": "Quan sigui cert, prioritzeu el flux de codi del dispositiu per a l'autenticació en lloc d'altres fluxos disponibles. Això és útil per a entorns com WSL on els fluxos del servidor local o del gestor d'URL poden no funcionar com s'esperava."
 		}
 	}
 }

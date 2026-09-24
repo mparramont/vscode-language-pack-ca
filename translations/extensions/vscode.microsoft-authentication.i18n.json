@@ -17,7 +17,18 @@
 			"Provide the authorization code to complete the sign in flow.": "Proporcione el código de autorización para completar el flujo de inicio de sesión.",
 			"The environment `{0}` is not a valid environment.": "El entorno '{0}' no es un entorno válido.",
 			"You have been signed out because reading stored authentication information failed.": "Se ha cerrado la sesión porque se ha producido un error al leer la información de autenticación almacenada.",
-			"You must also specify a custom environment in order to use the custom environment auth provider.": "También debe especificar un entorno personalizado para poder usar el proveedor de autenticación del entorno personalizado."
+			"You must also specify a custom environment in order to use the custom environment auth provider.": "También debe especificar un entorno personalizado para poder usar el proveedor de autenticación del entorno personalizado.",
+			"Copy & Continue to Microsoft": "Copia i continua a Microsoft",
+			"Having trouble logging in? Would you like to try a different way? ({0})": "Tens problemes per iniciar sessió? Vols provar d'una altra manera? ({0})",
+			"Microsoft Account configuration has been changed.": "S'ha canviat la configuració del compte de Microsoft.",
+			"No": "No",
+			"Open [{0}]({0}) in a new tab and paste your one-time code: {1}/The [{0}]({0}) will be a url and the {1} will be a code, e.g. 123456{Locked=\"[{0}]({0})\"}": "Obriu [{0}]({0}) en una pestanya nova i enganxeu el vostre codi d'un sol ús: {1}/El [{0}]({0}) serà un URL i el {1} serà un codi, p. ex. 123456{Locked,\"[{0}]({0})\"}",
+			"Reload": "Torna a carregar",
+			"Signing in to Microsoft...": "S'està iniciant la sessió a Microsoft...",
+			"To finish authenticating, navigate to Microsoft and paste in the above one-time code.": "Per acabar d'autenticar-se, navegueu a Microsoft i enganxeu el codi d'un sol ús anterior.",
+			"Yes": "Sí",
+			"You have not yet finished authorizing this extension to use your Microsoft Account. Would you like to try a different way? ({0})": "Encara no heu acabat d'autoritzar aquesta extensió per utilitzar el vostre compte de Microsoft. Vols provar d'una altra manera? ({0})",
+			"Your Code: {0}/The {0} will be a code, e.g. 123-456": "El vostre codi: {0}/El {0} serà un codi, p. ex. 123-456"
 		},
 		"package": {
 			"description": "Proveedor de autenticación de Microsoft",
@@ -34,7 +45,10 @@
 			"microsoft-sovereign-cloud.environment.enumDescriptions.AzureUSGovernment": "Azure Gobierno de EE.UU.",
 			"microsoft-sovereign-cloud.environment.enumDescriptions.custom": "Una nube soberana de Microsoft personalizada",
 			"signIn": "Iniciar sesión",
-			"signOut": "Cerrar sesión"
+			"signOut": "Cerrar sesión",
+			"microsoft-authentication.implementation.description": "La implementació d'autenticació que s'ha d'utilitzar per iniciar la sessió amb un compte de Microsoft.",
+			"microsoft-authentication.implementation.enumDescriptions.msal": "Utilitzeu la Microsoft Authentication Library (MSAL) per iniciar la sessió amb un compte de Microsoft.",
+			"microsoft-authentication.implementation.enumDescriptions.msal-no-broker": "Utilitzeu la Microsoft Authentication Library (MSAL) per iniciar la sessió amb un compte de Microsoft utilitzant un navegador. Això és útil si teniu problemes amb el corredor natiu."
 		}
 	}
 }

@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"displayName": "Prompte Language Basics",
+			"description": "Ressaltat de sintaxi per als documents de Prompt i Instruccions."
+		}
+	}
+}

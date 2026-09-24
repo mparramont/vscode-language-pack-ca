@@ -257,7 +257,12 @@
 			"wildcard expected": "se esperaba un carácter comodín",
 			"{ expected": "se esperaba {",
 			"{0}, '{1}'": "{0},",
-			"} expected": "se esperaba }"
+			"} expected": "se esperaba }",
+			"Character entity representing '{0}'": "Entitat de caràcter que representa '{0}'",
+			"Character entity representing '{0}', unicode equivalent '{1}'": "Entitat de caràcter que representa «{0}», equivalent a unicode «{1}»",
+			"argument from '{0}'": "argument de '{0}'",
+			"css.builtin.lab": "css.builtin.lab",
+			"if condition expected": "si s'esperava una condició"
 		},
 		"package": {
 			"description": "Ofrece un extenso soporte de lenguaje para archivos HTML y Handlebar",
@@ -296,7 +301,8 @@
 			"html.suggest.html5.desc": "Controla si la compatibilidad con el lenguaje HTML integrada sugiere etiquetas, propiedades y valores de HTML5.",
 			"html.trace.server.desc": "Hace un seguimiento de la comunicación entre VSCode y el servidor de lenguaje HTML.",
 			"html.validate.scripts": "Controla si la compatibilidad con el lenguaje HTML integrada valida los scripts incrustados.",
-			"html.validate.styles": "Controla si la compatibilidad con el lenguaje HTML integrada valida los estilos incrustados."
+			"html.validate.styles": "Controla si la compatibilidad con el lenguaje HTML integrada valida los estilos incrustados.",
+			"html.suggest.hideEndTagSuggestions.desc": "Controla si el suport de llenguatge HTML incorporat suggereix etiquetes de tancament. Quan està desactivat, no es mostraran les complecions d'etiquetes finals com `</div>`."
 		}
 	}
 }

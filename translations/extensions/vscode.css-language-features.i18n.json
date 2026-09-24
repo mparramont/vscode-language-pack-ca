@@ -248,7 +248,12 @@
 			"wildcard expected": "se esperaba un carácter comodín",
 			"{ expected": "se esperaba {",
 			"{0}, '{1}'": "{0}, \"{1}\"",
-			"} expected": "se esperaba }"
+			"} expected": "se esperaba }",
+			"Insert url() Function": "Insereix la funció url()",
+			"Insert url() Functions": "Insereix les funcions url()",
+			"argument from '{0}'": "argument de '{0}'",
+			"css.builtin.lab": "css.builtin.lab",
+			"if condition expected": "si s'esperava una condició"
 		},
 		"package": {
 			"css.colorDecorators.enable.deprecationMessage": "El valor \"css.colorDecorators.enable\" está en desuso en favor de \"editor.colorDecorators\".",

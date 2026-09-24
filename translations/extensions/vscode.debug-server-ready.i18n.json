@@ -24,7 +24,9 @@
 			"debug.server.ready.uriFormat.description": "Una cadena de formato usada al construir el URI a partir de un número de puerto. El primer \"%s\" se reemplaza por el número de puerto.",
 			"debug.server.ready.webRoot.description": "Valor pasado a la configuración de depuración para el \"Depurador para Chrome\".",
 			"description": "Abrir URI en el navegador si el servidor bajo la depuración está listo.",
-			"displayName": "Acción lista para el servidor"
+			"displayName": "Acción lista para el servidor",
+			"debug.server.ready.action.openIntegratedBrowser.description": "Obre l'URI al navegador integrat.",
+			"debug.server.ready.debugConfig.description": "La configuració de depuració a executar."
 		}
 	}
 }

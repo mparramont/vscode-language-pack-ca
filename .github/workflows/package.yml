@@ -6,8 +6,8 @@ jobs:
   package-artifact:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v3
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
       - name: Install VSCode Extension Manager
         run: npm install --global @vscode/vsce
       - name: Install dependencies
@@ -15,7 +15,7 @@ jobs:
       - name: Create .vsix package
         run: vsce package
       - name: Publish artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vscode-extension
           path: |

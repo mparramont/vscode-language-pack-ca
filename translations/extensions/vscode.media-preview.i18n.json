@@ -22,7 +22,10 @@
 			"{0}GB": "{0} GB",
 			"{0}KB": "{0} KB",
 			"{0}MB": "{0} MB",
-			"{0}TB": "{0} TB"
+			"{0}TB": "{0} TB",
+			"The audio file is stored with Git LFS and is not available for preview.": "El fitxer d'àudio s'emmagatzema amb Git LFS i no està disponible per a la vista prèvia.",
+			"The image is stored with Git LFS and is not available for preview.": "La imatge s'emmagatzema amb Git LFS i no està disponible per a la vista prèvia.",
+			"The video file is stored with Git LFS and is not available for preview.": "El fitxer de vídeo s'emmagatzema amb Git LFS i no està disponible per a la vista prèvia."
 		},
 		"package": {
 			"command.copyImage": "Copiar",
@@ -34,7 +37,9 @@
 			"description": "Proporciona vistas previas integradas de VS Code para imágenes, audio y vídeo",
 			"displayName": "Vista previa de medios",
 			"videoPreviewerAutoPlay": "Empiece a reproducir vídeos al silenciar automáticamente.",
-			"videoPreviewerLoop": "Repita los vídeos de nuevo automáticamente."
+			"videoPreviewerLoop": "Repita los vídeos de nuevo automáticamente.",
+			"command.reopenAsPreview": "Torna a obrir com a vista prèvia de la imatge",
+			"command.reopenAsText": "Torna a obrir com a text d'origen"
 		}
 	}
 }

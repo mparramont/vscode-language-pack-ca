@@ -1,0 +1,20 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"displayName": "Port del túnel local",
+			"description": "Permet que els ports locals de reenviament siguin accessibles a través d'internet.",
+			"category": "Reenvia el port",
+			"command.showLog": "Mostra el registre",
+			"command.restart": "Reinicia el sistema de reenviament"
+		},
+		"bundle": {
+			"Continue": "Continua",
+			"Don't show again": "No tornis a mostrar",
+			"Port Forwarding": "Reenvia el port",
+			"Private": "Privat",
+			"Public": "Públic",
+			"You're about to create a publicly forwarded port. Anyone on the internet will be able to connect to the service listening on port {0}. You should only proceed if this service is secure and non-sensitive.": "Esteu a punt de crear un port reenviat públicament. Qualsevol persona a Internet podrà connectar-se al servei escoltant al port {0}. Només hauríeu de procedir si aquest servei és segur i no sensible."
+		}
+	}
+}

@@ -58,7 +58,18 @@
 			"the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder)": "la ruta completa de la carpeta que contiene el archivo (por ejemplo, /Users/Development/myFolder/myFileFolder)",
 			"the name of the folder the file is contained in (e.g. myFileFolder)": "el nombre de la carpeta en que se encuentra el archivo (por ejemplo, myFileFolder)",
 			"the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt)": "la ruta de acceso de archivo relativa a la carpeta de área de trabajo (p. ej. myFolder/myFileFolder/myFile.txt)",
-			"the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder)": "la ruta de la carpeta que contiene el archivo, relativa a la carpeta del área de trabajo (por ejemplo myFolder/myFileFolder)"
+			"the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder)": "la ruta de la carpeta que contiene el archivo, relativa a la carpeta del área de trabajo (por ejemplo myFolder/myFileFolder)",
+			"The character used by the operating system to separate components in file paths. Is also aliased to '/'.": "El caràcter utilitzat pel sistema operatiu per separar components en els camins de fitxer. També està àlies de '/'.",
+			"The current opened file workspace folder name without any slashes (/)": "El nom actual de la carpeta de l'espai de treball obert sense barres (/)",
+			"The current opened file's folder name": "El nom actual de la carpeta del fitxer obert",
+			"The file extension of the editor (e.g. txt)": "L'extensió del fitxer de l'editor (p. ex. txt)",
+			"The file name of the editor without its directory or extension (e.g. myFile)": "El nom de fitxer de l'editor sense el seu directori o extensió (p. ex. el meuFitxer)",
+			"The nth parent folder name of the editor": "El nom enèsim de la carpeta pare de l'editor",
+			"The parent folder name of the editor (e.g. myFileFolder)": "El nom de la carpeta pare de l'editor (p. ex. myFileFolder)",
+			"The path where an extension is installed.": "El camí on s'instal·la una extensió.",
+			"the name of the active branch in the active repository (e.g. main)": "el nom de la branca activa al repositori actiu (p. ex. main)",
+			"the name of the active repository (e.g. vscode)": "el nom del repositori actiu (p. ex. vscode)",
+			"the state of the active editor (e.g. modified).": "l'estat de l'editor actiu (p. ex. modificat)."
 		},
 		"package": {
 			"description": "Proporciona características (IntelliSense avanzado, corrección automática) en archivos de configuración, como archivos de valores, de inicio y de recomendación de extensiones. ",

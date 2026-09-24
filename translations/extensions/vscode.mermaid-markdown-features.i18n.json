@@ -1,0 +1,41 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"displayName": "Característiques de Mermaid Markdown",
+			"description": "Afegeix la implementació de diagrames Mermaid als xats integrats, previsualitzacions Markdown i llibretes de notes.",
+			"command.resetPanZoom.title": "Restableix la panoràmica i l'ampliació",
+			"command.openInEditor.title": "Obre un diagrama a l'editor",
+			"command.copySource.title": "Copia l'origen del diagrama",
+			"config.title": "Mermaid",
+			"config.markdown-mermaid.lightModeTheme.description": "Tema predeterminat de la sirena per al mode de llum.",
+			"config.markdown-mermaid.darkModeTheme.description": "Tema predeterminat de la sirena per al mode fosc.",
+			"config.markdown-mermaid.theme.vscode.description": "El tema de la sirena deriva del tema actual de color VS Code.",
+			"config.markdown-mermaid.theme.base.description": "Tema integrat de la sirena. L'únic tema Mermaid que es pot personalitzar amb variables de tema.",
+			"config.markdown-mermaid.theme.forest.description": "Tema de la sirena incorporat utilitzant tonalitats de verd.",
+			"config.markdown-mermaid.theme.dark.description": "Tema integrat de la sirena per a fons foscos.",
+			"config.markdown-mermaid.theme.default.description": "El tema predeterminat de Mermaid. Funciona bé amb fons lleugers.",
+			"config.markdown-mermaid.theme.neutral.description": "Tema integrat de la sirena utilitzant una paleta d'escala de grisos neutra. Adequat per a impressions en blanc i negre.",
+			"config.markdown-mermaid.languages.description": "Llengües predeterminades al Markdown.",
+			"config.markdown-mermaid.maxTextSize.description": "La mida màxima permesa del diagrama de text de l'usuari.",
+			"config.markdown-mermaid.mouseNavigation.enabled.description": "Controla quan la navegació basada en el ratolí està habilitada en diagrames Mermaid.",
+			"config.markdown-mermaid.mouseNavigation.enabled.always": "Habilita sempre la navegació amb el ratolí en els diagrames de Mermaid.",
+			"config.markdown-mermaid.mouseNavigation.enabled.alt": "Habilita només la navegació del ratolí quan es manté premuda Alt (opció en el macOS). Gestos com el pinch-to-zoom encara funcionaran sense Alt.",
+			"config.markdown-mermaid.mouseNavigation.enabled.never": "Desactiva la navegació del ratolí.",
+			"config.markdown-mermaid.controls.show.description": "Controls que mostren els controls de la IU als diagrames de Mermaid.",
+			"config.markdown-mermaid.controls.show.never": "No mostris mai controls.",
+			"config.markdown-mermaid.controls.show.onHoverOrFocus": "Mostra els controls de zoom en passar per sobre o enfocar un diagrama.",
+			"config.markdown-mermaid.controls.show.always": "Mostra sempre els controls de zoom.",
+			"config.markdown-mermaid.resizable.description": "Permet que els diagrames es redimensionin verticalment arrossegant la vora inferior.",
+			"config.markdown-mermaid.maxHeight.markdownDescription": "Alçada màxima per als diagrames. Ha de ser un valor CSS amb unitats com `80vh` o `400px`. Deixeu-ho buit per intentar dimensionar automàticament els diagrames en funció del seu contingut."
+		},
+		"bundle": {
+			"Mermaid Diagram": "Diagrama de Mermaid",
+			"Open Diagram in Editor": "Obre un diagrama a l'editor",
+			"Reset Pan and Zoom": "Restableix la panoràmica i l'ampliació",
+			"Toggle Pan Mode": "Commuta el mode de panoràmica",
+			"Zoom In": "Amplia",
+			"Zoom Out": "Redueix"
+		}
+	}
+}

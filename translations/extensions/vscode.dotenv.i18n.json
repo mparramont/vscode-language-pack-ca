@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"displayName": "Fonaments de la llengua Dotenv",
+			"description": "Proporciona ressaltat de sintaxi i coincidència de parèntesis en fitxers dotenv."
+		}
+	}
+}

@@ -19,7 +19,9 @@
 			"lightHcColorThemeLabel": "Contraste alto claro",
 			"lightModernThemeLabel": "Moderno claro",
 			"lightPlusColorThemeLabel": "Claro+",
-			"minimalIconThemeLabel": "Mínimo (Visual Studio Code)"
+			"minimalIconThemeLabel": "Mínimo (Visual Studio Code)",
+			"light2026ThemeLabel": "Llum 2026",
+			"dark2026ThemeLabel": "Dark 2026"
 		}
 	}
 }

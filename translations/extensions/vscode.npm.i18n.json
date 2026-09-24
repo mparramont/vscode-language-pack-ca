@@ -84,7 +84,9 @@
 			"{0} yr": "{0} año",
 			"{0} yr ago": "hace {0} año",
 			"{0} yrs": "{0} años",
-			"{0} yrs ago": "hace {0} años"
+			"{0} yrs ago": "hace {0} años",
+			"Installed version: {0}": "Versió instal·lada: {0}",
+			"Using {0} as the preferred package manager. Found multiple lockfiles for {1}.  To resolve this issue, delete the lockfiles that don't match your preferred package manager or change the setting \"npm.packageManager\" to a value other than \"auto\".": "Utilitzant {0} com a gestor de paquets preferit. S'han trobat múltiples fitxers de blocatge per a {1}.  Per resoldre aquest problema, suprimiu els fitxers de bloqueig que no coincideixin amb el vostre gestor de paquets preferit o canvieu la configuració «npm.packageManager» a un valor diferent de «auto»."
 		},
 		"package": {
 			"command.debug": "Depurar",
@@ -116,7 +118,16 @@
 			"taskdef.script": "Script npm que debe personalizarse.",
 			"view.name": "Scripts Npm ",
 			"virtualWorkspaces": "La funcionalidad que requiere la ejecución del comando \"npm\" no está disponible en las áreas de trabajo virtuales.",
-			"workspaceTrust": "Esta extensión ejecuta tareas que requieren confianza para ser ejecutadas."
+			"workspaceTrust": "Esta extensión ejecuta tareas que requieren confianza para ser ejecutadas.",
+			"config.npm.packageManager.bun": "Usa el bun com a gestor de paquets.",
+			"config.npm.scriptRunner": "El corredor de scripts utilitzat per executar scripts.",
+			"config.npm.scriptRunner.npm": "Usa npm com a corredor de scripts.",
+			"config.npm.scriptRunner.yarn": "Usa el fil com a corredor de scripts.",
+			"config.npm.scriptRunner.pnpm": "Usa pnpm com a corredor de scripts.",
+			"config.npm.scriptRunner.bun": "Usa el bun com a corredor de scripts.",
+			"config.npm.scriptRunner.node": "Usa Node.js com a corredor de scripts.",
+			"config.npm.scriptRunner.vp": "Usa Vite+ (vp) com a l'executor de scripts.",
+			"config.npm.scriptRunner.auto": "Detecta automàticament quin executador de scripts s'ha d'utilitzar basat en fitxers de bloqueig i en els gestors de paquets instal·lats."
 		}
 	}
 }

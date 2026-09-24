@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"displayName": "Icones de fitxer VS Code Modern",
+			"description": "Un tema d'icones de fitxer modern per al Visual Studio Code",
+			"themeLabel": "Icones VS Code Modern"
+		}
+	}
+}

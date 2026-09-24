@@ -43,7 +43,16 @@
 			"The fork \"{0}\" was successfully created on GitHub.": "La bifurcación “{0}” se creó correctamente en GitHub.",
 			"Uploading files": "Cargando archivos",
 			"You don\\'t have permissions to push to \"{0}/{1}\" on GitHub. Would you like to create a fork and push to it instead?": "No tiene permisos para insertar en \"{0}/{1}\" en GitHub. ¿Desea crear una bifurcación e insertarla en ella en su lugar?",
-			"Your push to \"{0}/{1}\" was rejected by GitHub because push protection is enabled and one or more secrets were detected.": "GitHub rechazó la inserción en \"{0}/{1}\" porque la protección de inserción está habilitada y se detectaron uno o varios secretos."
+			"Your push to \"{0}/{1}\" was rejected by GitHub because push protection is enabled and one or more secrets were detected.": "GitHub rechazó la inserción en \"{0}/{1}\" porque la protección de inserción está habilitada y se detectaron uno o varios secretos.",
+			"Could not determine the current branch.": "No s'ha pogut determinar la branca actual.",
+			"Could not find a GitHub remote for this repository.": "No s'ha pogut trobar un remot GitHub per a aquest repositori.",
+			"Could not find a git repository for the session worktree.": "No s'ha pogut trobar un repositori git per a l'arbre de treball de sessió.",
+			"Could not parse GitHub remote URL.": "No s'ha pogut analitzar l'URL remot de GitHub.",
+			"Failed to publish branch: {0}": "Ha fallat la publicació de la branca: {0}",
+			"No GitHub remotes found that contain this commit.": "No s'ha trobat cap remot de GitHub que contingui aquesta publicació.",
+			"Publishing branch to {0}...": "S'està publicant la branca a {0}...",
+			"You don't have permissions to push to \"{0}/{1}\" on GitHub. Would you like to create a fork and push to it instead?": "No teniu permisos per prémer a \"{0}/{1}\" al GitHub. T'agradaria crear una bifurcació i empènyer a ella en el seu lloc?",
+			"{0} Open on GitHub": "{0} Obre al GitHub"
 		},
 		"package": {
 			"config.branchProtection": "Controla si se deben consultar las reglas del repositorio para repositorios de GitHub.",
@@ -52,7 +61,14 @@
 			"description": "Características de GitHub para VS Code",
 			"displayName": "GitHub",
 			"welcome.publishFolder": "Puede publicar directamente esta carpeta en un repositorio de GitHub. Una vez publicada, tendrá acceso a las características de control de código fuente con tecnología de GIT y GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)",
-			"welcome.publishWorkspaceFolder": "Puede publicar directamente una carpeta del área de trabajo en un repositorio de GitHub. Una vez publicada, tendrá acceso a las características de control de código fuente con tecnología de GIT y GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)"
+			"welcome.publishWorkspaceFolder": "Puede publicar directamente una carpeta del área de trabajo en un repositorio de GitHub. Una vez publicada, tendrá acceso a las características de control de código fuente con tecnología de GIT y GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)",
+			"command.copyVscodeDevLink": "Copia l'enllaç vscode.dev",
+			"command.publish": "Publica a GitHub",
+			"command.openOnGitHub": "Obre a GitHub",
+			"command.openOnVscodeDev": "Obre en vscode.dev",
+			"command.createPullRequest": "Crea PR",
+			"command.openPullRequest": "Obre el PR",
+			"config.showAvatar": "Controla si s'ha de mostrar l'avatar de GitHub de l'autor de la publicació en diversos hovers (ex: Git blame, Timeline, Source Control Graph, etc.)"
 		}
 	}
 }

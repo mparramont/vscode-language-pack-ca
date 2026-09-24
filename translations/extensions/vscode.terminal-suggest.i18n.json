@@ -1,0 +1,11 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Extensió per afegir complecions de terminal per a terminals zsh, bash i fish.",
+			"displayName": "Suggeriment de terminal per al codi VS",
+			"view.name": "Suggeriment del terminal",
+			"terminal.integrated.suggest.clearCachedGlobals": "Neteja els globals en memòria cau"
+		}
+	}
+}

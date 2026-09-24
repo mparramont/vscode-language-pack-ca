@@ -19,7 +19,11 @@
 			"markdownAttachmentRenderer.displayName": "Representador de dades adjuntes de cel·la ipynb de Markdown",
 			"newUntitledIpynb.shortTitle": "Jupyter Notebook",
 			"newUntitledIpynb.title": "Nou Jupyter Notebook",
-			"openIpynbInNotebookEditor.title": "Obrir el fitxer IPYNB a l'editor de Notebook"
+			"openIpynbInNotebookEditor.title": "Obrir el fitxer IPYNB a l'editor de Notebook",
+			"ipynb.experimental.serialization": "Funció experimental per serialitzar el quadern Jupyter en un fil de treball.",
+			"copyCellOutput.title": "Copia la sortida de cel·la",
+			"addCellOutputToChat.title": "Afegeix la sortida de cel·la al xat",
+			"openCellOutput.title": "Obre la sortida de cel·la a l'editor de text"
 		}
 	}
 }
