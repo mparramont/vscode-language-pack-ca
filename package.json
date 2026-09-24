@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-catala",
 	"displayName": "Paquet d'idioma català per a Visual Studio Code",
 	"description": "Tradueix la interfície de VS Code al català (valencià).",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"publisher": "mparramon",
 	"repository": {
 		"type": "git",

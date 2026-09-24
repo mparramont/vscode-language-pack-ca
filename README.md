@@ -26,6 +26,7 @@ El paquet original es va fer per a VS Code 1.80. Des d'aleshores, VS Code ha afe
 |---|---|
 | Versió 1.0.5 | 17.775 de 29.139 (61 %) |
 | Versió 1.1.0 | 5 de 29.190 (0,02 %) |
+| Versió 1.1.1 | 1 de 29.190 (0,003 %) |
 
 D'aquestes cadenes noves, 17.784 venen del traductor neuronal i 11 de l'Apertium.
 
@@ -39,7 +40,7 @@ Les traduccions fetes a mà no s'han tocat. Les automàtiques estan llistades a 
    code --install-extension mparramon.vscode-language-pack-catala
    ```
 
-   Cursor no fa servir el Marketplace de Microsoft. Descarrega el `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases) i instal·la'l amb `cursor --install-extension vscode-language-pack-catala-1.1.0.vsix`.
+   Cursor no fa servir el Marketplace de Microsoft. Descarrega el `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases) i instal·la'l amb `cursor --install-extension vscode-language-pack-catala-1.1.1.vsix`.
 
 2. Obre la paleta d'ordres, executa **Configure Display Language** i tria **català**.
 3. Reinicia l'editor.
@@ -58,6 +59,8 @@ Quan surt una versió nova de VS Code, torna a omplir les cadenes que falten:
    ```
 
 L'eina només afegeix les cadenes que falten. Primer prova el traductor neuronal a partir de l'anglès. Si la traducció perd algun marcador, com ara `{0}`, codi entre accents greus o una icona `$(nom)`, prova l'Apertium a partir del castellà. Si tampoc no el conserva, deixa la cadena en anglès. Les traduccions es desen a `.cau/` perquè repetir l'execució no torni a demanar el que ja té.
+
+Amb `--repara`, l'eina també torna a traduir les traduccions existents que perden o canvien un marcador `{0}`, un enllaç o una menció com ara `@agent`. Sol passar quan VS Code canvia el text anglès d'una cadena i la traducció antiga es queda enrere.
 
 ## Com es genera el paquet
 

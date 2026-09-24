@@ -221,7 +221,8 @@
 			"wordBasedSuggestions.currentDocument",
 			"wordBasedSuggestions.matchingDocuments",
 			"wordBasedSuggestions.off",
-			"wordBasedSuggestions.offWithInlineSuggestions"
+			"wordBasedSuggestions.offWithInlineSuggestions",
+			"showMoves"
 		],
 		"vs/editor/common/config/editorOptions": [
 			"allowVariableFonts",
@@ -310,7 +311,9 @@
 			"trimWhitespaceOnDelete",
 			"wordSegmenterLocales",
 			"wordWrapIndicator",
-			"wrapOnEscapedLineFeeds"
+			"wrapOnEscapedLineFeeds",
+			"multiCursorModifier",
+			"suggest.selectionMode"
 		],
 		"vs/editor/common/core/editorColorRegistry": [
 			"deprecatedEditorActiveIndentGuide",
@@ -578,7 +581,9 @@
 			"decreaseHoverVerbosity",
 			"decreaseVerbosity",
 			"increaseHoverVerbosity",
-			"increaseVerbosity"
+			"increaseVerbosity",
+			"stopped rendering",
+			"too many characters"
 		],
 		"vs/editor/contrib/indentation/browser/indentation": [
 			"changeTabDisplaySizeDescription",
@@ -743,7 +748,10 @@
 		],
 		"vs/editor/contrib/suggest/browser/suggestWidget": [
 			"editorSuggestWidgetFocusOutline",
-			"label"
+			"label",
+			"label.desc",
+			"label.detail",
+			"label.full"
 		],
 		"vs/editor/contrib/suggest/browser/wordContextKey": [
 			"desc"
@@ -2170,7 +2178,8 @@
 			"successUpdate",
 			"updateExtensionsNewVersionsAvailable",
 			"updateExtensionsNoExtensions",
-			"updateExtensionsQuery"
+			"updateExtensionsQuery",
+			"alreadyInstalled-checkAndUpdate"
 		],
 		"vs/platform/extensionManagement/node/extensionManagementService": [
 			"builtinAutoUpdate",
@@ -2327,7 +2336,12 @@
 			"systemCertificatesNode",
 			"systemCertificatesV2",
 			"useLocalProxy",
-			"webSocketAdditionalSupport"
+			"webSocketAdditionalSupport",
+			"proxy",
+			"proxyAuthorization",
+			"proxySupport",
+			"strictSSL",
+			"systemCertificates"
 		],
 		"vs/platform/telemetry/common/telemetryService": [
 			"telemetry.feedback.enabled",
@@ -5958,7 +5972,8 @@
 			"groupLabel"
 		],
 		"vs/workbench/browser/parts/editor/editorPlaceholder": [
-			"showLogs"
+			"showLogs",
+			"unknownErrorEditorTextWithError"
 		],
 		"vs/workbench/browser/parts/editor/editorStatus": [
 			"changeLanguageMode.arg.name",
@@ -6239,7 +6254,20 @@
 			"workbench.secondarySideBar.defaultVisibility.maximizedInWorkspace",
 			"workbench.secondarySideBar.defaultVisibility.visible",
 			"workbench.secondarySideBar.defaultVisibility.visibleInWorkspace",
-			"workbench.view.showQuietly"
+			"workbench.view.showQuietly",
+			"activityBarIconClickBehavior",
+			"doubleClickTabToToggleEditorGroupSizes",
+			"editorOpenPositioning",
+			"enablePreviewFromCodeNavigation",
+			"enablePreviewFromQuickOpen",
+			"highlightModifiedTabs",
+			"pinnedTabSizing",
+			"scrollToSwitchTabs",
+			"tabSizing",
+			"window.menuBarVisibility.compact",
+			"workbench.editor.tabSizingFixedMaxWidth",
+			"workbench.editor.tabSizingFixedMinWidth",
+			"wrapTabs"
 		],
 		"vs/workbench/browser/workbench.zenMode.contribution": [
 			"miToggleZenMode",
@@ -6600,7 +6628,8 @@
 			"selectKeybinding",
 			"symbolLabel",
 			"symbolLabelAria",
-			"toolbar"
+			"toolbar",
+			"openDoc"
 		],
 		"vs/workbench/contrib/accessibility/browser/accessibleViewActions": [
 			"editor.action.accessibilityHelp",
@@ -7430,7 +7459,8 @@
 			"upgradeChat",
 			"upgradePlan",
 			"upgradePro",
-			"upgradeToPro"
+			"upgradeToPro",
+			"interactiveSession.open"
 		],
 		"vs/workbench/contrib/chat/browser/actions/chatAgentRecommendationActions": [
 			"chat.installRecommendation"
@@ -9743,7 +9773,8 @@
 			"agentHost.debug.subagentToolCalls",
 			"agentHost.debug.unknownError",
 			"agentHost.debug.untitledSession",
-			"agentHost.debug.userRequest"
+			"agentHost.debug.userRequest",
+			"agentHost.debug.sessionRepoBranch"
 		],
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostLogSources": [
 			"agentHostLogs.channel",
@@ -9909,7 +9940,8 @@
 			"chatDebug.cache.visibleSignatureSummaryClean",
 			"chatDebug.cacheExplorer",
 			"chatDebug.cacheExplorer.title",
-			"chatDebug.title"
+			"chatDebug.title",
+			"chatDebug.cache.chunkIdxCol"
 		],
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugCacheInsights": [
 			"chatDebug.cache.category.expiration",
@@ -14275,7 +14307,10 @@
 			"ok",
 			"selectBreakpoint",
 			"triggerByLoading",
-			"triggeredBy"
+			"triggeredBy",
+			"breakpointWidgetExpressionPlaceholder",
+			"breakpointWidgetHitCountPlaceholder",
+			"breakpointWidgetLogMessagePlaceholder"
 		],
 		"vs/workbench/contrib/debug/browser/callStackWidget": [
 			"failedToLoadFrames",
@@ -14304,7 +14339,8 @@
 			"gutterMiddleClickAction",
 			"miToggleBreakpoint",
 			"runMenu",
-			"showVariableTypes"
+			"showVariableTypes",
+			"toolBarLocation"
 		],
 		"vs/workbench/contrib/debug/browser/debugActionViewItems": [
 			"commentLabelWithKeybinding",
@@ -14446,7 +14482,8 @@
 		],
 		"vs/workbench/contrib/debug/browser/welcomeView": [
 			"customizeRunAndDebug2",
-			"customizeRunAndDebugOpenFolder2"
+			"customizeRunAndDebugOpenFolder2",
+			"runAndDebugAction"
 		],
 		"vs/workbench/contrib/debug/common/debug": [
 			"breakpointHasModes",
@@ -14592,7 +14629,8 @@
 			"workbench.extensions.action.manageTrustedPublishers",
 			"workbench.extensions.action.toggleApplyToAllProfiles",
 			"workbench.extensions.installExtension.option.enable",
-			"workbench.extensions.installExtension.option.justification"
+			"workbench.extensions.installExtension.option.justification",
+			"InstallVSIXAction.successReload"
 		],
 		"vs/workbench/contrib/extensions/browser/extensionsActions": [
 			"auto update message",
@@ -14742,7 +14780,14 @@
 			"uninstallApplicationScopedMessage",
 			"uninstallDependents",
 			"unknown",
-			"updatingExtensions"
+			"updatingExtensions",
+			"enable locally",
+			"enable remote",
+			"not found",
+			"postDisableTooltip",
+			"postEnableTooltip",
+			"postUninstallTooltip",
+			"postUpdateTooltip"
 		],
 		"vs/workbench/contrib/extensions/common/extensions": [
 			"extensions"
@@ -14860,7 +14905,12 @@
 			"copyPathSeparator.backslash",
 			"copyPathSeparator.slash",
 			"sortOrderReverse",
-			"trimTrailingWhitespaceInRegexAndStrings"
+			"trimTrailingWhitespaceInRegexAndStrings",
+			"associations",
+			"autoSave",
+			"explorer.autoRevealExclude.when",
+			"formatOnSave",
+			"hotExit"
 		],
 		"vs/workbench/contrib/files/browser/views/explorerView": [
 			"collapseExplorerFoldersMetadata",
@@ -14886,7 +14936,9 @@
 			"revealInWindows"
 		],
 		"vs/workbench/contrib/format/browser/formatActionsMultiple": [
-			"miss.2"
+			"miss.2",
+			"miss",
+			"miss.1"
 		],
 		"vs/workbench/contrib/github/browser/githubLinkPresentation.contribution": [
 			"github.authenticationRequired",
@@ -16244,11 +16296,13 @@
 			"notebook.stickyScrollMode.flat",
 			"notebook.stickyScrollMode.indented",
 			"notebook.VariablesView.description",
-			"notebookFormatter.default"
+			"notebookFormatter.default",
+			"notebook.formatOnSave"
 		],
 		"vs/workbench/contrib/notebook/browser/notebookAccessibilityHelp": [
 			"notebook.focusNextEditor",
-			"notebook.focusPreviousEditor"
+			"notebook.focusPreviousEditor",
+			"notebook.cell.insertCodeCellBelowAndFocusContainer"
 		],
 		"vs/workbench/contrib/notebook/browser/notebookAccessibilityProvider": [
 			"notebookTreeAriaLabel",
@@ -16530,7 +16584,8 @@
 			"remote.autoForwardPortsSource.fallback",
 			"remote.autoForwardPortsSource.fallback.showPortSourceSetting",
 			"remote.autoForwardPortsSource.fallback.switchBack",
-			"remoteNoPorts"
+			"remoteNoPorts",
+			"remote.tunnelsView.automaticForward"
 		],
 		"vs/workbench/contrib/remote/browser/remoteIndicator": [
 			"remote.showExtensionRecommendations",
@@ -16544,7 +16599,9 @@
 		"vs/workbench/contrib/remote/common/remote.contribution": [
 			"remote.autoForwardPortFallback",
 			"remote.defaultExtensionsIfInstalledLocally.invalidFormat",
-			"remote.defaultExtensionsIfInstalledLocally.markdownDescription"
+			"remote.defaultExtensionsIfInstalledLocally.markdownDescription",
+			"remote.autoForwardPorts",
+			"remote.autoForwardPortsSource"
 		],
 		"vs/workbench/contrib/remote/electron-browser/remote.contribution": [
 			"remote",
@@ -16716,7 +16773,8 @@
 			"scmRepositories",
 			"showInputActionButton",
 			"source control graph",
-			"source control view"
+			"source control view",
+			"scm.providerCountBadge"
 		],
 		"vs/workbench/contrib/scm/browser/scmAccessibilityHelp": [
 			"disabled",
@@ -17299,7 +17357,12 @@
 			"terminal.integrated.tabs.allowAgentCliTitle",
 			"terminal.integrated.textBlinking",
 			"terminal.integrated.windowsUseConptyDll",
-			"workspaceFolderName"
+			"workspaceFolderName",
+			"terminal.integrated.customGlyphs",
+			"terminal.integrated.enableImages",
+			"terminal.integrated.minimumContrastRatio",
+			"terminal.integrated.shellIntegration.enabled",
+			"terminal.integrated.tabs.separator"
 		],
 		"vs/workbench/contrib/terminal/common/terminalContextKey": [
 			"splitPaneActive"
@@ -17674,7 +17737,9 @@
 			"terminalChatAgentProfile.linux",
 			"terminalChatAgentProfile.osx",
 			"terminalChatAgentProfile.path",
-			"terminalChatAgentProfile.windows"
+			"terminalChatAgentProfile.windows",
+			"autoApprove.matchCommandLine.false",
+			"autoApprove.matchCommandLine.true"
 		],
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/common/terminalSandboxService": [
 			"deleteFilesInSandboxTempDir",
@@ -18107,7 +18172,8 @@
 			"testOverflowItems"
 		],
 		"vs/workbench/contrib/testing/browser/testingExplorerFilter": [
-			"testing.filters.openedFiles"
+			"testing.filters.openedFiles",
+			"testExplorerFilter"
 		],
 		"vs/workbench/contrib/testing/browser/testingExplorerView": [
 			"noResults",
@@ -18192,7 +18258,8 @@
 			"testing.resultsView.layout",
 			"testing.resultsView.layout.treeLeft",
 			"testing.resultsView.layout.treeRight",
-			"testing.ShowCoverageInExplorer"
+			"testing.ShowCoverageInExplorer",
+			"testing.alwaysRevealTestOnStateChange"
 		],
 		"vs/workbench/contrib/testing/common/testingChatAgentTool": [
 			"runTestTool.confirm.all",
@@ -18274,7 +18341,10 @@
 			"cancellingUpdate",
 			"cancellingUpdateMenuEntry",
 			"checkingForUpdates2",
-			"showUpdateReleaseNotes"
+			"showUpdateReleaseNotes",
+			"checkingForUpdates",
+			"downloading",
+			"updating"
 		],
 		"vs/workbench/contrib/update/browser/update.contribution": [
 			"developerCategory",
@@ -18465,7 +18535,8 @@
 		],
 		"vs/workbench/contrib/userDataSync/browser/userDataSync": [
 			"download sync activity complete",
-			"turning on sync"
+			"turning on sync",
+			"using separate service"
 		],
 		"vs/workbench/contrib/userDataSync/browser/userDataSyncViews": [
 			"downloaded sync activity title",
@@ -19124,13 +19195,15 @@
 		],
 		"vs/workbench/services/extensions/browser/extensionUrlHandler": [
 			"installDetail",
-			"openUri"
+			"openUri",
+			"confirmUrl"
 		],
 		"vs/workbench/services/extensions/common/abstractExtensionService": [
 			"activation",
 			"disconnectRemote",
 			"proceedAnyways",
-			"stopExtensionHosts"
+			"stopExtensionHosts",
+			"extensionStopVetoMessage"
 		],
 		"vs/workbench/services/extensions/common/extensionsProposedApi": [
 			"enabledProposedAPIs"
@@ -19306,7 +19379,10 @@
 			"simpleSuggestWidgetHasFocusedSuggestion",
 			"simpleSuggestWidgetHasNavigated",
 			"suggestWidget.loading",
-			"suggestWidget.noSuggestions"
+			"suggestWidget.noSuggestions",
+			"label.desc",
+			"label.detail",
+			"label.full"
 		],
 		"vs/workbench/services/suggest/browser/simpleSuggestWidgetDetails": [
 			"details.close",
@@ -19360,7 +19436,8 @@
 			"schema.rootFolderNameExpanded",
 			"schema.rootFolderNames",
 			"schema.rootFolderNamesExpanded",
-			"schema.usesCurrentColor"
+			"schema.usesCurrentColor",
+			"schema.font-size"
 		],
 		"vs/workbench/services/themes/common/themeExtensionPoints": [
 			"color themes",
@@ -19394,7 +19471,8 @@
 			"creating settings",
 			"from default",
 			"installing extensions",
-			"invalid profile content"
+			"invalid profile content",
+			"progress keybindings"
 		],
 		"vs/workbench/services/userDataProfile/browser/userDataProfileManagement": [
 			"reload message when switched",
@@ -19409,7 +19487,8 @@
 			"download sync activity dialog title",
 			"no authentication providers during signin",
 			"replace local single",
-			"replace remote single"
+			"replace remote single",
+			"conflicts detected"
 		],
 		"vs/workbench/services/userDataSync/common/userDataSync": [
 			"download sync activity title",
@@ -19474,6 +19553,39 @@
 			"saveWorkspaceMessage",
 			"workspaceOpenedDetail",
 			"workspaceOpenedMessage"
+		],
+		"vs/editor/contrib/gotoError/browser/gotoErrorWidget": [
+			"marker aria"
+		],
+		"vs/platform/files/electron-main/diskFileSystemProviderServer": [
+			"binFailed",
+			"trashFailed"
+		],
+		"vs/workbench/api/browser/mainThreadExtensionService": [
+			"uninstalledDep"
+		],
+		"vs/workbench/api/browser/statusBarExtensionPoint": [
+			"text"
+		],
+		"vs/workbench/contrib/markers/browser/markersFileDecorations": [
+			"markers.showOnFile"
+		],
+		"vs/workbench/contrib/outline/browser/outline.contribution": [
+			"outline.problem.colors",
+			"outline.problems.badges",
+			"outline.showProblem"
+		],
+		"vs/workbench/contrib/snippets/browser/snippetsService": [
+			"badVariableUse"
+		],
+		"vs/workbench/services/filesConfiguration/common/filesConfigurationService": [
+			"configuredReadonly"
+		],
+		"vs/workbench/services/themes/common/themeConfiguration": [
+			"colorTheme"
+		],
+		"vs/workbench/contrib/markers/browser/messages": [
+			"markers.panel.filter.placeholder"
 		]
 	},
 	"extensions/vscode.configuration-editing.i18n.json": {
@@ -19970,7 +20082,34 @@
 			"Insert url() Functions",
 			"argument from '{0}'",
 			"css.builtin.lab",
-			"if condition expected"
+			"if condition expected",
+			"Defines styles that can be re-used throughout the stylesheet with `@include`.",
+			"return `@color` 10% points darker",
+			"return `@color` 10% points less saturated",
+			"return `@color` 10% points less transparent",
+			"return `@color` 10% points lighter",
+			"return `@color` 10% points more saturated",
+			"return `@color` 10% points more transparent",
+			"return `@color` with 50% transparency",
+			"return `@color` with a 10 degree larger in hue",
+			"return `@darkcolor` if `@color1 is> 43% luma` otherwise return `@lightcolor`, see notes",
+			"return a mix of `@color1` and `@color2`",
+			"returns the `alpha` channel of `@color`",
+			"returns the `blue` channel of `@color`",
+			"returns the `green` channel of `@color`",
+			"returns the `hue` channel of `@color` in the HSL space",
+			"returns the `hue` channel of `@color` in the HSV space",
+			"returns the `lightness` channel of `@color` in the HSL space",
+			"returns the `luma` value (perceptual brightness) of `@color`",
+			"returns the `red` channel of `@color`",
+			"returns the `saturation` channel of `@color` in the HSL space",
+			"returns the `saturation` channel of `@color` in the HSV space",
+			"returns the `value` channel of `@color` in the HSV space"
+		],
+		"package": [
+			"css.lint.fontFaceProperties.desc",
+			"less.lint.fontFaceProperties.desc",
+			"scss.lint.fontFaceProperties.desc"
 		]
 	},
 	"extensions/vscode.debug-auto-launch.i18n.json": {
@@ -20081,7 +20220,9 @@
 			"colors.incomingDeleted",
 			"colors.incomingRenamed",
 			"colors.incomingModified",
-			"colors.blameEditorDecoration"
+			"colors.blameEditorDecoration",
+			"view.workbench.scm.empty",
+			"view.workbench.cloneRepository"
 		],
 		"bundle": [
 			"\n\nAre you sure you want to discard ALL changes in {0} files?",
@@ -20390,7 +20531,10 @@
 			"Use a Different Microsoft Account",
 			"Your Microsoft account is now linked to a different GitHub account.",
 			"Your organization's Microsoft sign-in is linked to this GitHub account:\n\n{0}\n\nSign in to GitHub with this account?",
-			"url handler"
+			"url handler",
+			"Open [{0}]({0}) in a new tab and paste your one-time code: {1}/The [{0}]({0}) will be a url and the {1} will be a code, e.g. 123-456{Locked=\"[{0}]({0})\"}",
+			"Signing in to {0}.../The {0} will be a url, e.g. github.com",
+			"Your Code: {0}/The {0} will be a code, e.g. 123-456"
 		]
 	},
 	"extensions/vscode.github.i18n.json": {
@@ -20424,7 +20568,23 @@
 			"Character entity representing '{0}', unicode equivalent '{1}'",
 			"argument from '{0}'",
 			"css.builtin.lab",
-			"if condition expected"
+			"if condition expected",
+			"{0}, '{1}'",
+			"return `@color` 10% points darker",
+			"return `@color` 10% points less transparent",
+			"return `@color` 10% points more saturated",
+			"return `@color` 10% points more transparent",
+			"return `@color` with 50% transparency",
+			"return `@color` with a 10 degree larger in hue",
+			"return `@darkcolor` if `@color1 is> 43% luma` otherwise return `@lightcolor`, see notes",
+			"return a mix of `@color1` and `@color2`",
+			"returns the `alpha` channel of `@color`",
+			"returns the `blue` channel of `@color`",
+			"returns the `hue` channel of `@color` in the HSV space",
+			"returns the `lightness` channel of `@color` in the HSL space",
+			"returns the `saturation` channel of `@color` in the HSL space",
+			"returns the `saturation` channel of `@color` in the HSV space",
+			"returns the `value` channel of `@color` in the HSV space"
 		]
 	},
 	"extensions/vscode.ipynb.i18n.json": {
@@ -20966,7 +21126,11 @@
 			"walkthroughs.nodejsWelcome.debugJsFile.altText",
 			"walkthroughs.nodejsWelcome.learnMoreAboutJs.title",
 			"walkthroughs.nodejsWelcome.learnMoreAboutJs.description",
-			"walkthroughs.nodejsWelcome.learnMoreAboutJs.altText"
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.altText",
+			"typescript.preferences.autoImportFileExcludePatterns",
+			"typescript.disableAutomaticTypeAcquisition",
+			"configuration.suggest.names",
+			"configuration.suggest.jsdoc.generateReturns"
 		],
 		"bundle": [
 			"Add meaningful parameter name with AI",

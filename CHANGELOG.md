@@ -1,6 +1,12 @@
 # Registre de canvis
 Aquí es documenten tots els canvis destacats del paquet d'idioma "vscode-language-pack-catala".
 
+# 1.1.1
+
+- Reparades 146 traduccions que perdien o canviaven marcadors `{0}`, enllaços o mencions `@`: 138 fetes a mà, heretades de versions anteriors, i 8 automàtiques. La majoria eren de cadenes que VS Code havia canviat en anglès.
+- Corregit el diàleg «Quant a», on la traducció automàtica havia traduït noms propis com Electron i Chromium.
+- Nova opció `--repara` a `eines/omple_traduccions.py`.
+
 # 1.1.0
 
 - S'han omplert amb traducció automàtica les cadenes de VS Code 1.139 que faltaven. Les traduccions fetes a mà no s'han tocat. Detalls al README.

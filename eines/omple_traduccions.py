@@ -39,8 +39,11 @@ PROTEGITS = re.compile(
     r"|<[^<>\n]+>"          # etiquetes HTML
     r"|https?://\S+"        # URL
     r"|%[sd]"
+    r"|(?<![\w`])@[\w/.-]*\w"  # mencions i filtres: @agent, @org/package
 )
 MARCADORS = re.compile(r"\{[^{}\s]*\}")
+# Drecera de teclat: && just abans d'una lletra. "foo && bar" no ho és.
+DRECERA = re.compile(r"&&(?=[^\W\d_])")
 PARENTESI_INICIAL = re.compile(r"^\(([^()\n]+)\)\s+(\S.*)$", re.S)
 
 
@@ -65,7 +68,7 @@ def text(valor):
 
 def empremta(s):
     """Marcadors i fragments protegits que ha de conservar una traducció."""
-    return sorted(MARCADORS.findall(s) + PROTEGITS.findall(s)) + [s.count("&&")]
+    return sorted(MARCADORS.findall(s) + PROTEGITS.findall(s)) + [len(DRECERA.findall(s))]
 
 
 def demana(url, dades, intents=4):
@@ -120,13 +123,13 @@ def protegeix(s):
         guardats.append(m.group(0))
         return "{P%d}" % (len(guardats) - 1)
 
-    return PROTEGITS.sub(guarda, s.replace("&&", "")), guardats
+    return DRECERA.sub("", PROTEGITS.sub(guarda, s)), guardats
 
 
 def restaura(s, guardats, original):
     for i, g in enumerate(guardats):
         s = s.replace("{P%d}" % i, g, 1)
-    if "&&" in original:
+    if DRECERA.search(original):
         # La drecera de teclat va a la primera lletra de la traducció.
         s = re.sub(r"([^\W\d_])", r"&&\1", s, count=1)
     return s
@@ -189,9 +192,34 @@ def apertium(textos):
     return per_linies(textos, tradueix)
 
 
-def recull(vscode, castella, paquet):
-    """Llista de (fitxer, secció, clau, anglès, castellà) que falten al paquet."""
+ENLLACOS = re.compile(r"\]\(([^)\s]+)\)|(?:https?|command):[^\s)\"'`<>\]]+")
+
+
+def enllacos(s):
+    return {a or b for a, b in ((m.group(1), m.group(0)) for m in ENLLACOS.finditer(s))}
+
+
+def defectuosa(traduccio, angles):
+    """Cert si una traducció existent perd o canvia marcadors o enllaços de l'anglès."""
+    if sorted(re.findall(r"\{\d+\}", traduccio)) != sorted(re.findall(r"\{\d+\}", angles)):
+        return True
+    if enllacos(traduccio) != enllacos(angles):
+        return True
+    mencions = re.compile(r"(?<![\w`])@[\w/.-]*\w")
+    return sorted(mencions.findall(traduccio)) != sorted(mencions.findall(angles))
+
+
+def recull(vscode, castella, paquet, repara=False):
+    """Llista de (fitxer, secció, clau, anglès, castellà) que falten al paquet.
+
+    Amb repara=True, també hi afegeix les traduccions existents defectuoses.
+    """
     feines = []
+
+    def falta(seccio, clau, angles):
+        if clau not in seccio:
+            return True
+        return repara and defectuosa(text(seccio[clau]), angles)
 
     claus = llegeix(f"{vscode}/out/nls.keys.json")
     missatges = llegeix(f"{vscode}/out/nls.messages.json")
@@ -200,7 +228,7 @@ def recull(vscode, castella, paquet):
     i = 0
     for modul, llista in claus:
         for clau in llista:
-            if clau not in ca.get(modul, {}):
+            if falta(ca.get(modul, {}), clau, missatges[i]):
                 feines.append(("main.i18n.json", modul, clau, missatges[i],
                                text(es.get(modul, {}).get(clau, "")) or None))
             i += 1
@@ -213,14 +241,14 @@ def recull(vscode, castella, paquet):
         es = (llegeix(f"{castella}/translations/{fitxer}") or {}).get("contents", {})
         nls = llegeix(os.path.join(os.path.dirname(pj), "package.nls.json")) or {}
         for clau, valor in nls.items():
-            if clau not in ca.get("package", {}):
+            if falta(ca.get("package", {}), clau, text(valor)):
                 feines.append((fitxer, "package", clau, text(valor),
                                text(es.get("package", {}).get(clau, "")) or None))
         # Les cadenes del codi de les extensions ("bundle") tenen com a clau el
         # text anglès. VS Code no les publica, així que les agafem del castellà.
         for clau, valor in es.get("bundle", {}).items():
-            if clau not in ca.get("bundle", {}):
-                angles = clau.split("/{Locked")[0]
+            angles = clau.split("/{Locked")[0]
+            if falta(ca.get("bundle", {}), clau, angles):
                 feines.append((fitxer, "bundle", clau, angles, text(valor)))
     return feines
 
@@ -244,10 +272,12 @@ def main():
     ap.add_argument("--castella", required=True, help="carpeta extension del paquet castellà")
     ap.add_argument("--paquet", default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     ap.add_argument("--cau", default=".cau/traduccions.json", help="memòria cau de traduccions")
+    ap.add_argument("--repara", action="store_true",
+                    help="torna a traduir les traduccions que perden marcadors o enllaços")
     ap.add_argument("--limit", type=int, help="tradueix només les N primeres (per provar)")
     args = ap.parse_args()
 
-    feines = recull(args.vscode, args.castella, args.paquet)[: args.limit]
+    feines = recull(args.vscode, args.castella, args.paquet, args.repara)[: args.limit]
     print(f"Cadenes que falten: {len(feines)}", file=sys.stderr)
 
     cau = llegeix(args.cau) or {"neuronal": {}, "apertium": {}}
@@ -277,6 +307,9 @@ def main():
     fitxers, automatiques = {}, {}
     comptes = {"neuronal": 0, "apertium": 0, "sense traduir": 0}
     for fitxer, seccio, clau, angles, castella in feines:
+        if not re.search(r"[^\W\d_]", MARCADORS.sub("", angles)):
+            # Només marcadors i signes, com ara "{0}@{1}": no hi ha res a traduir.
+            cau["neuronal"][angles] = angles
         tria, motor = valida("neuronal", angles, angles, True), "neuronal"
         if tria is None and castella and castella != angles:
             tria, motor = valida("apertium", castella, angles), "apertium"
