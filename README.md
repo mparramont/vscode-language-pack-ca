@@ -67,7 +67,7 @@ npm install --global @vscode/vsce
 vsce package
 ```
 
-El flux de treball de GitHub Actions fa el mateix a cada `push` i adjunta el `.vsix` com a artefacte.
+El flux de treball de GitHub Actions fa el mateix a cada `push` a `main`, a cada etiqueta `v*` i a cada petició d'incorporació, i desa el `.vsix` com a artefacte. També es pot executar a mà des de la pestanya Actions.
 
 ## Llicència
 
