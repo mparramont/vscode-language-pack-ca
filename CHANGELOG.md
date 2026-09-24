@@ -1,6 +1,11 @@
 # Registre de canvis
 Aquí es documenten tots els canvis destacats del paquet d'idioma "vscode-language-pack-catala".
 
+# 1.1.2
+
+- Afegides captures de pantalla de VS Code en català al README i al Marketplace.
+- Corregit el text del camp de cerca de l'editor de configuració: «Cerca a la configuració».
+
 # 1.1.1
 
 - Reparades 146 traduccions que perdien o canviaven marcadors `{0}`, enllaços o mencions `@`: 138 fetes a mà, heretades de versions anteriors, i 8 automàtiques. La majoria eren de cadenes que VS Code havia canviat en anglès.

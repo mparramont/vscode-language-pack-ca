@@ -10218,7 +10218,7 @@
 			"workspaceSettings": "Espai de treball"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsEditor2": {
-			"SearchSettings.AriaLabel": "Configuració de la cerca",
+			"SearchSettings.AriaLabel": "Cerca a la configuració",
 			"clearInput": "Neteja l'entrada de cerca de paràmetres",
 			"clearSearchFilters": "Neteja els filtres",
 			"filterInput": "Paràmetres del filtre",

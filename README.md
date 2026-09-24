@@ -4,6 +4,15 @@ Traducció no oficial de la interfície de Visual Studio Code al català (valenc
 
 Funciona a VS Code i als editors basats en VS Code, com ara Cursor i VSCodium.
 
+![L'explorador i l'editor de VS Code en català](imatges/explorador.png)
+
+| | |
+|---|---|
+| ![La paleta d'ordres en català](imatges/paleta-d-ordres.png) | ![L'editor de configuració en català](imatges/configuracio.png) |
+| La paleta d'ordres | L'editor de configuració |
+| ![La vista d'extensions en català](imatges/extensions.png) | |
+| La vista d'extensions | |
+
 ## Agraïments
 
 Aquest repositori és una bifurcació. Tota la feina de traducció revisada a mà és de les persones que el van començar:
@@ -40,7 +49,7 @@ Les traduccions fetes a mà no s'han tocat. Les automàtiques estan llistades a 
    code --install-extension mparramon.vscode-language-pack-catala
    ```
 
-   Cursor no fa servir el Marketplace de Microsoft. Descarrega el `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases) i instal·la'l amb `cursor --install-extension vscode-language-pack-catala-1.1.1.vsix`.
+   Cursor no fa servir el Marketplace de Microsoft. Descarrega el `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases) i instal·la'l amb `cursor --install-extension vscode-language-pack-catala-1.1.2.vsix`.
 
 2. Obre la paleta d'ordres, executa **Configure Display Language** i tria **català**.
 3. Reinicia l'editor.
