@@ -33,17 +33,16 @@ Les traduccions fetes a mà no s'han tocat. Les automàtiques estan llistades a 
 
 ## Com s'instal·la
 
-1. Descarrega el fitxer `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases).
-2. Instal·la'l:
+1. Instal·la el paquet des del [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mparramon.vscode-language-pack-catala), o des de la terminal:
 
    ```
-   code --install-extension vscode-language-pack-ca-1.1.0.vsix
+   code --install-extension mparramon.vscode-language-pack-catala
    ```
 
-   A Cursor, fes servir `cursor` en lloc de `code`.
+   Cursor no fa servir el Marketplace de Microsoft. Descarrega el `.vsix` de l'última [versió publicada](https://github.com/mparramont/vscode-language-pack-ca/releases) i instal·la'l amb `cursor --install-extension vscode-language-pack-catala-1.1.0.vsix`.
 
-3. Obre la paleta d'ordres, executa **Configure Display Language** i tria **català**.
-4. Reinicia l'editor.
+2. Obre la paleta d'ordres, executa **Configure Display Language** i tria **català**.
+3. Reinicia l'editor.
 
 ## Com s'actualitza la traducció automàtica
 

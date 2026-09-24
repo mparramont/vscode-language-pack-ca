@@ -1,11 +1,11 @@
 # Registre de canvis
-Aquí es documenten tots els canvis destacats del paquet d'idioma "vscode-language-pack-ca".
+Aquí es documenten tots els canvis destacats del paquet d'idioma "vscode-language-pack-catala".
 
 # 1.1.0
 
 - S'han omplert amb traducció automàtica les cadenes de VS Code 1.139 que faltaven. Les traduccions fetes a mà no s'han tocat. Detalls al README.
 - Afegida l'eina `eines/omple_traduccions.py` per tornar a omplir les cadenes quan surti una versió nova de VS Code.
-- Publicada per `mparramont` a partir de la bifurcació de [pocsenderi/vscode-language-pack-ca](https://github.com/pocsenderi/vscode-language-pack-ca).
+- Publicada al Visual Studio Marketplace com a `mparramon.vscode-language-pack-catala`, a partir de la bifurcació de [pocsenderi/vscode-language-pack-ca](https://github.com/pocsenderi/vscode-language-pack-ca).
 - Actualitzades les accions del flux de treball de GitHub a la versió 4.
 
 # 1.0.5
